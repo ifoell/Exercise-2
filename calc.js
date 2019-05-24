@@ -49,6 +49,8 @@ function handleOperator(nextOperator) {
   calculator.operator = nextOperator;
 }
 
+// function 
+
 const performCalculation = {
   '/': (firstOperand, secondOperand) => firstOperand / secondOperand,
 
@@ -57,6 +59,8 @@ const performCalculation = {
   '+': (firstOperand, secondOperand) => firstOperand + secondOperand,
 
   '-': (firstOperand, secondOperand) => firstOperand - secondOperand,
+
+  '^': (firstOperand, secondOperand) => Math.pow(firstOperand,secondOperand),
 
   '=': (firstOperand, secondOperand) => secondOperand
 };
